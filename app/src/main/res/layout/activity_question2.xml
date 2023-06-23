@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question2"
+    >
+
+
+    <TextView
+        android:id="@+id/q2textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:text="Q2: What do you want to be known for?" />
+
+    <RadioGroup
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/q2textview"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/wealthbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wealth"
+            tools:ignore="UsingOnClickInXml"
+            />
+
+        <RadioButton
+            android:id="@+id/esbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emotional Sensitivity"
+            tools:ignore="UsingOnClickInXml"
+            />
+
+        <RadioButton
+            android:id="@+id/familybutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Family"
+            tools:ignore="UsingOnClickInXml"
+            />
+
+        <RadioButton
+            android:id="@+id/tastesbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refined Tastes"
+            tools:ignore="UsingOnClickInXml"
+            />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/submitq2button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q2textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="#F44336"
+        android:text="Submit" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/questionmark"
+        android:layout_below="@+id/submitq2button"
+        />
+
+</RelativeLayout>

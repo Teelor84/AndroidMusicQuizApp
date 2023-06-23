@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsPage">
+
+
+    <TextView
+        android:id="@+id/resultstitletextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:text="Your Results:"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/genreresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultstitletextview"
+        android:layout_centerHorizontal="true"
+        android:textSize="50sp"
+        android:text="Test"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/songdisplaytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genreresult"
+
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:text="Here are some songs from that genre"
+        />
+
+
+        <VideoView
+            android:id="@+id/firstsong"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/songdisplaytext"
+
+            />
+
+        <VideoView
+            android:id="@+id/secondsong"
+            android:layout_below="@+id/firstsong"
+            android:layout_marginTop="30dp"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+
+            />
+
+    <TextView
+        android:id="@+id/explanationtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondsong"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="The buttons below will allow you to restart the quiz, go to a location with some history related to your genre or see all the songs for each genre"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/gotospoilerbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/explanationtext"
+        android:layout_marginLeft="280dp"
+        android:text="Spoilers"
+        />
+
+    <Button
+        android:id="@+id/gpsbutton"
+        android:layout_alignRight="@+id/gotospoilerbutton"
+        android:layout_marginRight="130dp"
+        android:layout_below="@id/explanationtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History" />
+
+
+    <Button
+        android:id="@+id/restartbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/explanationtext"
+        android:layout_alignRight="@+id/gpsbutton"
+        android:layout_marginRight="120dp"
+        android:text="Restart"/>
+
+
+
+
+</RelativeLayout>

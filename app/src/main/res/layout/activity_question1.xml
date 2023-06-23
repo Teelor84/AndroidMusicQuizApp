@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Question1">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:text="Q1: Select what time you'd like to listen to your music" />
+
+    <!--<TextView
+        android:id="@+id/timetextview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        >
+    </TextView>-->
+
+    <!--<TextView
+        android:id="@id/timetextview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/q1timePicker"
+        >
+    </TextView>-->
+
+    <TimePicker
+        android:id="@+id/q1timePicker"
+        android:layout_below="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/verifytimebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q1timePicker"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#009688"
+        android:text="Verify Time" />
+
+    <Button
+        android:id="@+id/submitq1button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verifytimebutton"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#009688"
+        android:text="Submit" />
+
+
+</RelativeLayout>

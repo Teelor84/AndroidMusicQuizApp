@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question6">
+
+    <TextView
+        android:id="@+id/q6textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:text="Q6: How far back does the history of your music go?" />
+
+    <RadioGroup
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/q6textview"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/q6100yrsbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100 years +"
+            tools:ignore="UsingOnClickInXml"
+            />
+
+        <RadioButton
+            android:id="@+id/q670yrsbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="70 years+"
+            tools:ignore="UsingOnClickInXml"
+            />
+
+        <RadioButton
+            android:id="@+id/q650yrsbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50 years+"
+            tools:ignore="UsingOnClickInXml"
+            />
+
+        <RadioButton
+            android:id="@+id/q6yr30sbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 years+"
+            tools:ignore="UsingOnClickInXml"
+            />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/submitq6button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q6textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="#FF9800"
+        android:text="Submit" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_below="@+id/submitq6button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/history" />
+
+</RelativeLayout>

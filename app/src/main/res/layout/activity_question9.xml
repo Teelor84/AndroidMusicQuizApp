@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question9">
+
+
+    <TextView
+        android:id="@+id/q9textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:text="Q9: What venue would you most likely find a song from the genre?" />
+
+    <RadioGroup
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/q9textview"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/q9arenabutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arena"
+            tools:ignore="UsingOnClickInXml"
+            />
+
+        <RadioButton
+            android:id="@+id/q9hiddenbarbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hidden Bar"
+            tools:ignore="UsingOnClickInXml"
+            />
+
+        <RadioButton
+            android:id="@+id/q9smallstagebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small Stage"
+            tools:ignore="UsingOnClickInXml"
+            />
+
+        <RadioButton
+            android:id="@+id/q9divebarbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dive Bar"
+            tools:ignore="UsingOnClickInXml"
+            />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/submitq9button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q9textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#E91E63"
+        android:text="Submit" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_below="@+id/submitq9button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/venue" />
+
+</RelativeLayout>

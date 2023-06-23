@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AndroidFinalApp</string>
+    <string name="app_description">This app will run you through a series of questions in order to determine your favorite music genre out of 4 potential ones</string>
+    <string name="notification_channel_nameq1">Q1 Notification</string>
+    <string name="notification_title">Spoiler Notification</string>
+    <string name="notification_text">This answer will add a point to: </string>
+    <string-array name="song_data">
+        <item>Rock Songs:</item>
+        <item>The Wonder of You(Elvis Presley): youtube.com/watch?v=F5eEvfOyb7k</item>
+        <item>Until the End(Breaking Benjamin): youtube.com/watch?v=M4x-GJNmgVs</item>
+        <item>Rap Songs:</item>
+        <item>Black SkinHead(Kanye West): youtube.com/watch?v=R4xrLKb6oFI</item>
+        <item>Rappers Delight(SugarHill Gang): youtube.com/watch?v=mcCK99wHrk0</item>
+        <item>Country Songs:</item>
+        <item>Silver Haired Daddy of Mine(Gene Autry): youtube.com/watch?v=K073HkvmhdA</item>
+        <item>Five o Clock Somewhere(Alan Jackson): youtube.com/watch?v=BPCjC543llU</item>
+        <item>Jazz Songs:</item>
+        <item>Love(Nat King Cole): youtube.com/watch?v=UZWmtxLiiFE</item>
+        <item>You Make Me Feel So Young(Frank Sinatra): youtube.com/watch?v=TZNIKZdoehE</item>
+    </string-array>
+</resources>

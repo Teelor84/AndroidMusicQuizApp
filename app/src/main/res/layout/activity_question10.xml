@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question10">
+
+    <TextView
+        android:id="@+id/q10textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:text="Q10: Would stereotypical grandparents approve of the music you listen to?" />
+
+    <RadioGroup
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/q10textview"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/q10yesbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            tools:ignore="UsingOnClickInXml"
+            />
+
+        <RadioButton
+            android:id="@+id/q10nobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            tools:ignore="UsingOnClickInXml"
+            />
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/submitq10button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q10textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="#8BC34A"
+        android:textColor="@color/black"
+        android:text="Submit" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_below="@+id/submitq10button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/grandparents" />
+
+</RelativeLayout>
